@@ -1,0 +1,22 @@
+.option {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem $m-size;
+  border-bottom: 1px solid lighten($light-blue, 10%);
+}
+
+.option__text {
+  color: white;
+  font-size: $m-size;
+  margin: 0;
+  word-break: break-all;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .option {
+    padding: $l-size $m-size;
+  }
+  .option__text {
+    font-size: 1.5rem;
+  }
+}
